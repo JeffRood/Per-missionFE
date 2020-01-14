@@ -1,0 +1,30 @@
+<form [formGroup]="PermisoForm">
+
+    <div class="modal-body-content not-flow">
+        <div class="form-field">
+            <strong class="caption">Nombre:</strong>
+
+            <div>
+            <input   formControlName="tipo" type="text" required >
+            </div>
+        </div>
+
+        <div class="form-field">
+            <strong class="caption">Apellido:</strong>
+
+            <div>
+            <input   formControlName="Apellido" type="text" required >
+            </div>
+        </div>
+
+        <div class="form-field">
+            <strong class="caption">TipoPermmiso:</strong>
+
+            <div>
+            <input   formControlName="TipoPermiso" type="text" required >
+            </div>
+        </div>
+    </div>
+    <button *ngIf="PermisoForm.valid"
+    class="primary-btn " (click)="Continuar()">Continuar</button>
+</form>

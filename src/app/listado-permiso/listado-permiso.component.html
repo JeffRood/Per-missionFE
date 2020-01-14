@@ -1,0 +1,18 @@
+<table class="table striped" style="margin-top: 20px">
+    <thead>
+        <tr>
+            <th>Empleado Nombre</th>
+            <th>Empleado Apellido</th>
+            <th>Fecha</th>
+            <th class="nocenter">Eliminar</th>
+        </tr>
+    </thead>
+    <tbody class="centertext">
+        <tr  *ngFor="let data of Lista_Permisos">
+            <td> {{data.NombreEmpleado}} </td>
+            <td> {{data.ApellidosEmpleado}}</td>
+            <td> {{data.Fecha}} </td>
+            <td class="nocenter">/td>
+        </tr>
+    </tbody>
+</table>
